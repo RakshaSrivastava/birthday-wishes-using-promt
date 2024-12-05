@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Happy Birthday!</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+		}
+		
+		.birthday-message {
+			text-align: center;
+			margin-top: 100px;
+		}
+		
+		.birthday-message h1 {
+			font-size: 48px;
+			color: #333;
+		}
+		
+		.birthday-message p {
+			font-size: 24px;
+			color: #666;
+		}
+	</style>
+</head>
+<body>
+	<div class="birthday-message">
+		<h1>Happy Birthday!</h1>
+		<p id="name"></p>
+		<p>Wishing you a day filled with love, laughter, and all your favorite things.</p>
+		<p>May this special day bring you joy, happiness, and unforgettable memories.</p>
+		<p>Best wishes on your birthday!</p>
+	</div>
+	
+	<script>
+		var name = prompt("Please enter your name:");
+		document.getElementById("name").innerHTML = "Dear " + name + ",";
+	</script>
+</body>
+</html>
